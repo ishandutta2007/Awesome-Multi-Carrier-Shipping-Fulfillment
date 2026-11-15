@@ -1,138 +1,151 @@
-# Awesome-Multi-Carrier-Shipping-Fulfillment
+# Awesome Multi-Carrier Shipping & Fulfillment [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-# Awesome Multi-Carrier Shipping & Fulfillment
-
-> A curated list of top Multi-Carrier Shipping and Fulfillment platforms — both SaaS/Hosted commercial solutions and open-source alternatives for rate comparison, label generation, tracking, and fulfillment automation across carriers.
-> 🌟 Star this repo if you find it useful! 🌟
+> A curated list of top Multi-Carrier Shipping and Fulfillment software, SaaS platforms, developer APIs, and open-source libraries for rate comparison, label generation, batch printing, multi-carrier tracking, address verification, and e-commerce warehouse fulfillment automation.
 
 ---
 
-## 📋 Table of Contents
+## 📑 Table of Contents
 
+- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
 - [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [ShipStation](#shipstation)
-  - [Shippo](#shippo)
-  - [EasyPost](#easypost)
-  - [ShipEngine](#shipengine)
-  - [Sendcloud](#sendcloud)
-  - [Descartes ShipRush](#descartes-shiprush)
-- [Open-Source Software](#-open-source-software)
-  - [Karrio](#karrio)
-  - [Roulier](#roulier)
-  - [ERPNext Shipping](#erpnext-shipping)
-  - [ParcelBridge](#parcelbridge)
+- [Open-Source Software & Developer Libraries](#-open-source-software--developer-libraries)
+- [Feature Comparison Matrix](#-feature-comparison-matrix)
+- [Key Selection Criteria](#-key-selection-criteria)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+---
+
+## 🌐 Sector Overview & Market Dynamics
+
+The global multi-carrier shipping and parcel management software market is estimated at **$2.4B to $4.2B**, projected to surpass **$10B+ by 2030** propelled by global cross-border e-commerce, omnichannel fulfillment, and automated rate shopping.
+
+The market structure is **moderately fragmented yet converging toward oligopoly** at the enterprise scale: legacy logistics behemoths (e.g., Descartes, Auctane/Stamps.com) and modern API-first unicorns (e.g., EasyPost, Shippo) capture the lion's share of North American and European shipping volumes, while regional compliance requirements, local courier networks, and emerging open-source stacks sustain vibrant niche ecosystems worldwide.
 
 ---
 
 ## 🟦 SaaS / Hosted Platforms
 
-Commercial, cloud-hosted Multi-Carrier Shipping and Fulfillment platforms. These are not open-source but are included as reference points for feature comparison.
+The following hosted commercial platforms provide managed carrier integrations, rate calculation, pre-negotiated postage discounts, automated label generation, and tracking APIs. Ranked in descending order by enterprise valuation / market capitalization:
 
-### ShipStation
-**Type:** Multi-channel shipping and fulfillment platform
-ShipStation is one of the most widely adopted shipping platforms, connecting e-commerce channels, carriers, and warehouses to streamline order fulfillment. It supports automated order import, batch shipping, label printing, and tracking across major carriers, with pricing that scales by shipment volume.
-
-### Shippo
-**Type:** Multi-carrier shipping API and dashboard
-Shippo provides a unified API for comparing rates and generating labels across carriers including USPS, UPS, FedEx, and DHL. It offers both a developer-focused API and a web dashboard for managing shipments, making it a common choice for platforms and e-commerce businesses wanting carrier flexibility without direct integrations.
-
-### EasyPost
-**Type:** Shipping API with carrier abstraction
-EasyPost provides a single API to integrate with multiple carriers for rating, label generation, tracking, and address verification. It is positioned for developers wanting to avoid maintaining individual carrier integrations, with pay-as-you-go pricing based on shipment volume.
-
-### ShipEngine
-**Type:** Multi-carrier shipping API and platform
-ShipEngine (now part of Auror) provides a multi-carrier API for rates, labels, and tracking, with support for FedEx, UPS, DHL, and USPS. It is often used by e-commerce platforms and 3PLs wanting a unified carrier interface, with usage-based pricing.
-
-### Sendcloud
-**Type:** European multi-carrier shipping platform
-Sendcloud provides shipping automation for European e-commerce, connecting carriers, automating label generation, and offering tracking pages. It integrates with major e-commerce platforms and is positioned for merchants wanting a unified shipping workflow across European carriers.
-
-### Descartes ShipRush
-**Type:** Multi-carrier shipping software for SMBs
-Descartes ShipRush provides shipping software that connects to multiple carriers for rate comparison and label printing, with integrations into e-commerce platforms and accounting systems. It is positioned for small to mid-sized businesses wanting a desktop or cloud-based shipping workflow.
+| Platform | Valuation / Company Size | Pricing (Starting Paid Tier) | Free Tier & Free Trial Limits | Key Highlights & Target Audience |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Descartes ShipRush](https://shiprush.com/)** | **~$8.1B** *(Descartes Systems Group NASDAQ: DSGX market cap)* | **$9.95/month** *(Express plan, scales to $29.95/mo Speedy & $99.95/mo Warehouse)* | **15-day free trial** *(full feature access across standard plans)* | Multi-carrier shipping software built for SMBs, e-commerce stores, and mid-sized warehouses needing direct desktop/cloud integrations with major carriers and accounting systems. |
+| **[ShipStation](https://www.shipstation.com/)** | **~$6.6B** *(Auctane / Stamps.com take-private acquisition valuation)* | **$14.99/month** *(Starter plan, up to 50 shipments/month, 3 users)* | **30-day free trial** *(unlimited features and test batches, postage costs billed separately)* | Industry-leading web-based order fulfillment platform connecting 100+ marketplaces, shopping carts, and global carriers with batch label generation and automation rules. |
+| **[EasyPost](https://www.easypost.com/)** | **~$1.5B** *(Peak venture valuation)* | **$20.00/month** *(BYOCA plan: Bring-Your-Own-Carrier at $0.08/label)* | **Free forever plan: Up to 3,000 labels/month** *(using EasyPost Wallet pre-negotiated carriers; $0.08/label overage)* | Modern, developer-first shipping API with carrier abstraction, real-time rate comparison, tracking webhooks, and domestic/international address verification. |
+| **[Shippo](https://goshippo.com/)** | **~$1.0B** *(Series E unicorn valuation)* | **$19.00/month** *(Professional plan, custom branding & automations)* | **Free forever plan: Up to 30 labels/month** *(using Shippo carrier accounts; 1 user login; $0.05-$0.07/label when linking own carrier accounts)* | E-commerce shipping dashboard and unified REST API connecting Shopify, WooCommerce, USPS, FedEx, UPS, and DHL for rate shopping and instant label printing. |
+| **[Sendcloud](https://www.sendcloud.com/)** | **~$750M - $1.0B** *(Backed by $177M Series C led by SoftBank; ~$100M ARR scale)* | **€28.00/month** *(Lite plan: 400 labels/mo base allowance)* | **Free forever plan: Pay-per-label only** *(unlimited regular parcel volume strictly on Sendcloud carrier rates; max 50 unstamped letters; own carrier contracts excluded)* | Europe's all-in-one shipping platform offering localized carrier connections, branded tracking pages, automated returns portals, and checkout pick-up point selectors. |
+| **[ShipEngine](https://www.shipengine.com/)** | **Part of Auctane ($6.6B)** | **$75.00/month** *(Advanced 1K plan: includes 1,000 labels/mo at $0.075 overage)* | **Free plan ($0/mo platform fee)** *(pay only label postage on ShipEngine carrier accounts; 30-day sandbox trial without credit card for API testing)* | High-performance multi-carrier shipping API for platforms, 3PLs, and large-scale merchants requiring deep programmatic rating, tracking webhooks, and validation. |
 
 ---
 
-## 🟩 Open-Source Software
+## 🟩 Open-Source Software & Developer Libraries
 
-Self-hosted, community-driven Multi-Carrier Shipping and Fulfillment tools. The open-source ecosystem spans **full multi-carrier shipping platforms with APIs**, **Python shipping libraries**, **ERP-integrated shipping modules**, and **package forwarding starters**.
+Self-hosted, community-driven, and developer-centric multi-carrier shipping solutions, headless logistics APIs, and carrier abstraction libraries. Sorted in descending order by GitHub stargazers:
 
-### Karrio
-**Stack:** Python / Django / React / PostgreSQL | **License:** LGPL-3.0 (server/SDK) / Commercial (enterprise)
-Karrio is the leading open-source multi-carrier shipping platform, positioned as a developer-friendly alternative to expensive multi-carrier SaaS APIs [citation:1][citation:11]. Key capabilities include:
-- **Headless shipping**: API-first access to a network of shipping carriers [citation:1]
-- **Multi-carrier API**: Query rates, purchase labels, create trackers, and manage carrier connections through a unified interface [citation:1]
-- **Multi-carrier SDK**: Integrate custom carrier APIs using the Karrio SDK framework [citation:1]
-- **Dashboard**: Visualize and test shipping transactions [citation:1]
-- **Docker deployment**: Optimized for self-hosted deployments [citation:1]
+### 1. [Karrio](https://github.com/karrioapi/karrio) [![GitHub stars](https://img.shields.io/github/stars/karrioapi/karrio?style=social&color=white)](https://github.com/karrioapi/karrio/stargazers)
+* **Stack:** Python, Django, Next.js, React, GraphQL, Docker
+* **License:** LGPL-3.0 (Core Engine & SDK) / Commercial (EE modules)
+* **Description:** The leading open-source, headless multi-carrier shipping platform and logistics API. Karrio provides a unified GraphQL & REST API layer to connect with dozens of worldwide couriers (UPS, FedEx, DHL, USPS, Canada Post, Purolator, Australia Post, etc.). Includes a modern web dashboard for tracking shipments, booking pickups, printing commercial invoices/labels, and managing carrier accounts.
 
-**Important licensing note:** The core server, community carrier plugins, and modules are **LGPL-3.0**, while files in the `/ee` directory fall under a separate commercial license. The OSS version provides the core rating, tracking, and shipping APIs but lacks advanced features like multi-tenancy/orgs and built-in address validation [citation:4]. Quick start via Docker Compose is documented, with a hobby deployment script available for Linux [citation:1].
-**Best for:** Developers and platforms wanting a self-hosted, API-first multi-carrier shipping layer with the freedom to extend carrier integrations, accepting the LGPL licensing and the open-core feature split.
+### 2. [ActiveShipping](https://github.com/Shopify/active_shipping) [![GitHub stars](https://img.shields.io/github/stars/Shopify/active_shipping?style=social&color=white)](https://github.com/Shopify/active_shipping/stargazers)
+* **Stack:** Ruby
+* **License:** MIT
+* **Description:** Extracted from Shopify's production core, ActiveShipping is the battle-tested multi-carrier shipping abstraction library for Ruby. It exposes a normalized interface for calculating shipping rates, tracking parcel milestones, and verifying destination addresses across USPS, UPS, FedEx, Canada Post, and Australia Post.
 
-### Roulier
-**Stack:** Python | **License:** AGPL-3.0
-Roulier is a Python library for sending parcels that calls carrier APIs directly from your server using your own credentials [citation:7]. It integrates with French carriers including La Poste, DPD, GLS, and Chronopost, with more planned. Usage is library-level: you import `roulier`, specify the carrier and action (e.g., `get_label`), and pass a payload. **Trade-off:** It is a library rather than a full platform—you build the surrounding application, and carrier coverage is currently France-focused.
-**Best for:** Python developers building custom shipping integrations for French carriers, accepting a library-level integration rather than a ready-made dashboard.
+### 3. [ERPNext Shipping](https://github.com/frappe/erpnext-shipping) [![GitHub stars](https://img.shields.io/github/stars/frappe/erpnext-shipping?style=social&color=white)](https://github.com/frappe/erpnext-shipping/stargazers)
+* **Stack:** Python, Frappe Framework, ERPNext
+* **License:** GPL-3.0
+* **Description:** The official multi-carrier shipping integration app for ERPNext. Enables enterprise rate shopping across multiple aggregators and carriers (including Sendcloud and LetMeShip), one-click shipment creation from sales orders, automated label printing directly on packing slips, and synchronized live parcel tracking.
 
-### ERPNext Shipping
-**Stack:** Python / ERPNext / Frappe | **License:** GPL-3.0 (ERPNext)
-ERPNext Shipping is an official Frappe app that adds multi-carrier shipping capabilities to ERPNext [citation:6]. Key features include:
-- **Rate comparison**: Fetch shipping rates from multiple providers (LetMeShip, SendCloud) and compare them for a shipment [citation:6]
-- **Shipment creation**: Select a rate to automatically create a shipment on the provider's platform [citation:6]
-- **Label printing**: Generate shipping labels directly from the Shipment record [citation:6]
-- **Tracking**: Track shipment status via the integrated provider [citation:6]
-- **Preferred services**: Configure frequently used services for quick selection [citation:6]
+### 4. [DotNetShipping](https://github.com/kylewest/DotNetShipping) [![GitHub stars](https://img.shields.io/github/stars/kylewest/DotNetShipping?style=social&color=white)](https://github.com/kylewest/DotNetShipping/stargazers)
+* **Stack:** C#, .NET
+* **License:** MIT
+* **Description:** A popular .NET multi-carrier rate calculation library. DotNetShipping wraps carrier web services for UPS, FedEx, and USPS into an intuitive, unified object model, enabling .NET e-commerce applications to fetch real-time carrier rates concurrently with automatic metric/imperial unit conversion.
 
-The app requires API credentials from at least one provider (SendCloud or LetMeShip) and is installed alongside ERPNext. **Limitation:** Carrier coverage depends on the integrated providers, which may not serve all regions [citation:6].
-**Best for:** Organizations already running ERPNext wanting native multi-carrier shipping with rate comparison and label printing, accepting the provider-dependent coverage.
+### 5. [ShippingRates](https://github.com/AlexeyBusygin/ShippingRates) [![GitHub stars](https://img.shields.io/github/stars/AlexeyBusygin/ShippingRates?style=social&color=white)](https://github.com/AlexeyBusygin/ShippingRates/stargazers)
+* **Stack:** C#, .NET Standard
+* **License:** MIT
+* **Description:** A modern, cross-platform .NET library that retrieves shipping rates from multiple carriers (UPS, FedEx, USPS, and DHL). Uses an extensible `RateManager` architecture that queries providers in parallel and returns structured quotes with error handling and service breakdown.
 
-### ParcelBridge
-**Stack:** PHP / CakePHP 5 / MariaDB | **License:** Open Source (starter kit)
-ParcelBridge is an open-source CakePHP 5 starter application for **package forwarding and shipment workflows**, covering warehouse intake, invoice review, ship requests, and tracking [citation:2]. Key characteristics:
-- **Workflow focus**: Receiving packages at a warehouse, linking to clients, uploading/reviewing invoices, creating ship requests, and tracking outbound shipments [citation:2]
-- **Admin and client portals**: Role-based access with dashboards for each [citation:2]
-- **API endpoints**: With OpenAPI/Swagger documentation [citation:2]
-- **CSV/PDF generation**: For manifests and exports [citation:2]
+### 6. [python-ship](https://github.com/benweatherman/python-ship) [![GitHub stars](https://img.shields.io/github/stars/benweatherman/python-ship?style=social&color=white)](https://github.com/benweatherman/python-ship/stargazers)
+* **Stack:** Python
+* **License:** MIT
+* **Description:** A Pythonic multi-carrier interface unifying access to common parcel carrier APIs (UPS, USPS, and FedEx). Designed for clean rate shopping, address validation, and shipment tracking without boilerplate SOAP/XML handling.
 
-**Important:** It is explicitly a **backend-first starter kit** with a minimal scaffold UI, not a finished SaaS product—developers are expected to extend and adapt it for their specific business case [citation:2]. It does not include carrier integrations out of the box.
-**Best for:** Developers building custom package forwarding or warehouse intake systems who want a CakePHP 5 foundation with workflow logic and tests, accepting that carrier connectivity must be built separately.
+### 7. [cardmagic/shipping](https://github.com/cardmagic/shipping) [![GitHub stars](https://img.shields.io/github/stars/cardmagic/shipping?style=social&color=white)](https://github.com/cardmagic/shipping/stargazers)
+* **Stack:** Ruby
+* **License:** MIT
+* **Description:** An easy-to-use Ruby shipping gem for calculating shipping rates, tracking orders, and handling multi-package delivery configurations across major national and international logistics carriers.
+
+### 8. [dzship](https://github.com/DZBuild-com/dzship) [![GitHub stars](https://img.shields.io/github/stars/DZBuild-com/dzship?style=social&color=white)](https://github.com/DZBuild-com/dzship/stargazers)
+* **Stack:** TypeScript, Node.js
+* **License:** MIT
+* **Description:** An open-source multi-carrier shipping API connecting 90+ regional parcel couriers (Yalidine, ZR Express, Maystro, NOEST, Ecotrack network). Features unified COD (cash on delivery) order creation, label rendering, commune dataset mapping, and tracking status normalization.
+
+### 9. [Roulier](https://github.com/akretion/roulier) [![GitHub stars](https://img.shields.io/github/stars/akretion/roulier?style=social&color=white)](https://github.com/akretion/roulier/stargazers)
+* **Stack:** Python
+* **License:** AGPL-3.0
+* **Description:** A specialized Python library designed to communicate directly with French and European carrier APIs (La Poste, Colissimo, DPD, Chronopost, GLS) using merchant API credentials to generate parcel labels, track statuses, and request pickups.
+
+### 10. [pdt256/shipping](https://github.com/pdt256/shipping) [![GitHub stars](https://img.shields.io/github/stars/pdt256/shipping?style=social&color=white)](https://github.com/pdt256/shipping/stargazers)
+* **Stack:** PHP
+* **License:** MIT
+* **Description:** A modular PHP shipping rate aggregator for USPS, UPS, and FedEx. Standardizes rate requests, parcel dimensions, and origin/destination coordinates into a clean object-oriented PHP architecture.
+
+### 11. [ParcelBridge](https://github.com/salines/parcelbridge) [![GitHub stars](https://img.shields.io/github/stars/salines/parcelbridge?style=social&color=white)](https://github.com/salines/parcelbridge/stargazers)
+* **Stack:** PHP, CakePHP 5, MariaDB
+* **License:** MIT
+* **Description:** An open-source backend starter application and warehouse workflow system designed for package forwarding services, intake scanning, customs invoice review, ship request management, and outbound dispatch operations.
 
 ---
 
-## 📊 Comparison at a Glance
+## 📊 Feature Comparison Matrix
 
-| Software | License | Stack | Multi-Carrier Rates | Label Generation | Tracking | Self-Hosted | Best For |
-|----------|---------|-------|---------------------|------------------|----------|-------------|----------|
-| **ShipStation** | Proprietary | Cloud | ✅ | ✅ | ✅ | ❌ | High-volume fulfillment |
-| **Shippo** | Proprietary | Cloud | ✅ API | ✅ | ✅ | ❌ | Developer carrier abstraction |
-| **EasyPost** | Proprietary | Cloud | ✅ API | ✅ | ✅ | ❌ | Pay-as-you-go shipping API |
-| **Karrio** | LGPL-3.0 | Python/Django | ✅ | ✅ | ✅ | ✅ | Open-source multi-carrier platform |
-| **Roulier** | AGPL-3.0 | Python | (Check) | ✅ | (Check) | ✅ (Library) | French carrier integrations |
-| **ERPNext Shipping** | GPL-3.0 | Python/Frappe | ✅ (Providers) | ✅ | ✅ | ✅ (ERPNext) | ERPNext multi-carrier shipping |
-| **ParcelBridge** | Open Source | CakePHP/MariaDB | ❌ | ❌ | ✅ (Workflow) | ✅ | Package forwarding starter |
+| Solution | Deployment | License | Multi-Carrier Rate Comparison | Shipping Label Generation | Real-Time Tracking | Address Verification | Self-Hosted | Primary Use Case |
+| :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :--- |
+| **Descartes ShipRush** | Cloud / Desktop | Proprietary | ✅ | ✅ | ✅ | ✅ | ❌ | Small-to-midsize warehouse shipping |
+| **ShipStation** | Cloud SaaS | Proprietary | ✅ | ✅ | ✅ | ✅ | ❌ | High-volume multi-channel e-commerce |
+| **EasyPost** | Cloud API | Proprietary | ✅ | ✅ | ✅ | ✅ | ❌ | Developer-first shipping infrastructure |
+| **Shippo** | Cloud SaaS / API | Proprietary | ✅ | ✅ | ✅ | ✅ | ❌ | Small business & direct storefronts |
+| **Sendcloud** | Cloud SaaS | Proprietary | ✅ | ✅ | ✅ | ✅ | ❌ | European cross-border shipping |
+| **ShipEngine** | Cloud API | Proprietary | ✅ | ✅ | ✅ | ✅ | ❌ | Enterprise logistics & 3PL platforms |
+| **Karrio** | Self-Hosted / Cloud | LGPL-3.0 / Commercial | ✅ | ✅ | ✅ | ✅ (Enterprise) | ✅ | Open-source API-first shipping platform |
+| **ActiveShipping** | Ruby Gem | MIT | ✅ | ❌ | ✅ | ✅ | ✅ | Ruby on Rails e-commerce apps |
+| **ERPNext Shipping**| Frappe App | GPL-3.0 | ✅ (Via providers) | ✅ | ✅ | ❌ | ✅ | Integrated ERPNext warehouse logistics |
+| **DotNetShipping** | .NET NuGet | MIT | ✅ | ❌ | ❌ | ❌ | ✅ | C# / .NET rate shopping engine |
+| **ShippingRates** | .NET NuGet | MIT | ✅ | ❌ | ❌ | ❌ | ✅ | Modern C# multi-carrier quotes |
+| **python-ship** | Python Package | MIT | ✅ | ❌ | ✅ | ✅ | ✅ | Python automation & rate check scripts |
+| **cardmagic/shipping**| Ruby Gem | MIT | ✅ | ❌ | ✅ | ❌ | ✅ | Ruby rate & tracking calculations |
+| **dzship** | Node.js / NPM | MIT | ✅ | ✅ | ✅ | ❌ | ✅ | North African regional carrier network |
+| **Roulier** | Python Package | AGPL-3.0 | ❌ | ✅ | ✅ | ❌ | ✅ | Direct French carrier API integration |
+| **pdt256/shipping** | PHP Composer | MIT | ✅ | ❌ | ❌ | ❌ | ✅ | PHP rate calculation & shopping |
+| **ParcelBridge** | Self-Hosted Web App | MIT | ❌ | ❌ | ✅ (Workflow) | ❌ | ✅ | Package forwarding & warehouse intake |
+
+---
+
+## 💡 Key Selection Criteria
+
+When selecting a multi-carrier shipping solution for your e-commerce stack or logistics pipeline, evaluate the following factors:
+
+1. **Carrier Coverage & Regional Reach:** Ensure native compatibility with primary national carriers (USPS, UPS, FedEx, DHL, Royal Mail, DPD, Colissimo) and regional last-mile delivery providers.
+2. **Bring Your Own Carrier (BYOC) vs. Pre-Negotiated Rates:** Hosted platforms often charge a surcharge ($0.05–$0.08/label or higher monthly subscriptions) to link existing negotiated courier contracts. Self-hosted options like **Karrio** permit direct merchant account usage without per-label toll fees.
+3. **API-First vs. Turnkey Dashboard:** Businesses with custom order management systems (OMS) or ERPs benefit from headless APIs (Karrio, EasyPost, ShipEngine), whereas merchants operating on Shopify/WooCommerce often prioritize visual dashboards (ShipStation, Shippo, Sendcloud).
+4. **Data Privacy & Self-Hosting:** Regulated industries, healthcare fulfillment, or high-volume merchants seeking zero vendor lock-in can deploy self-hosted stacks (Docker / Kubernetes) with full database ownership.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source Multi-Carrier Shipping or Fulfillment tool that should be listed here, please open a pull request with:
+Contributions are welcomed! If you know of an active open-source multi-carrier shipping tool, carrier SDK, or fulfillment automation framework:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source.
-
-**Note on the open-source ecosystem:** The open-source landscape for **multi-carrier shipping** is **led by Karrio**, which provides a full API-first platform with rate comparison, label generation, and tracking across carriers, under an LGPL-3.0 license for its core components [citation:1][citation:4]. **Roulier** fills a narrower need for Python developers integrating French carriers directly [citation:7], while **ERPNext Shipping** brings multi-carrier capabilities to organizations already on the Frappe/ERPNext stack [citation:6]. **ParcelBridge** addresses a different problem entirely—package forwarding workflows rather than carrier rate comparison [citation:2]. No open-source project fully replicates the carrier breadth and enterprise polish of ShipStation or EasyPost, but Karrio covers the core multi-carrier shipping workflow comprehensively for self-hosted deployments.
+1. Fork this repository.
+2. Add your project under the appropriate category in alphabetical or star-ranked order.
+3. Include the repository URL, tech stack, license, and star count badge.
+4. Submit a pull request with a descriptive title and release verification.
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
-
----
-
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+This repository is curated and maintained under the [Creative Commons Zero v1.0 Universal](LICENSE) (CC0 1.0) Public Domain Dedication.
