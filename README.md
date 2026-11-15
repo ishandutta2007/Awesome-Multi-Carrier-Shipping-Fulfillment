@@ -57,57 +57,57 @@ The following hosted commercial platforms provide managed carrier integrations, 
 
 Self-hosted, community-driven, and developer-centric multi-carrier shipping solutions, headless logistics APIs, and carrier abstraction libraries. Sorted in descending order by GitHub stargazers: ⭐
 
-### 1. [Karrio](https://github.com/karrioapi/karrio) [![GitHub stars](https://img.shields.io/github/stars/karrioapi/karrio?style=social&color=white)](https://github.com/karrioapi/karrio/stargazers) 📦
+### 1. [Karrio](https://github.com/karrioapi/karrio) [![GitHub_Stars](https://img.shields.io/github/stars/karrioapi/karrio?style=social&color=white)](https://github.com/karrioapi/karrio/stargazers) 📦
 * **Stack:** Python, Django, Next.js, React, GraphQL, Docker 🐍
 * **License:** LGPL-3.0 (Core Engine & SDK) / Commercial (EE modules) 📄
 * **Description:** The leading open-source, headless multi-carrier shipping platform and logistics API. Karrio provides a unified GraphQL & REST API layer to connect with dozens of worldwide couriers (UPS, FedEx, DHL, USPS, Canada Post, Purolator, Australia Post, etc.). Includes a modern web dashboard for tracking shipments, booking pickups, printing commercial invoices/labels, and managing carrier accounts. 🌐
 
-### 2. [ActiveShipping](https://github.com/Shopify/active_shipping) [![GitHub stars](https://img.shields.io/github/stars/Shopify/active_shipping?style=social&color=white)](https://github.com/Shopify/active_shipping/stargazers) 💎
+### 2. [ActiveShipping](https://github.com/Shopify/active_shipping) [![GitHub_Stars](https://img.shields.io/github/stars/Shopify/active_shipping?style=social&color=white)](https://github.com/Shopify/active_shipping/stargazers) 💎
 * **Stack:** Ruby 💎
 * **License:** MIT 📄
 * **Description:** Extracted from Shopify's production core, ActiveShipping is the battle-tested multi-carrier shipping abstraction library for Ruby. It exposes a normalized interface for calculating shipping rates, tracking parcel milestones, and verifying destination addresses across USPS, UPS, FedEx, Canada Post, and Australia Post. 🛍️
 
-### 3. [ERPNext Shipping](https://github.com/frappe/erpnext-shipping) [![GitHub stars](https://img.shields.io/github/stars/frappe/erpnext-shipping?style=social&color=white)](https://github.com/frappe/erpnext-shipping/stargazers) 🏭
+### 3. [ERPNext Shipping](https://github.com/frappe/erpnext-shipping) [![GitHub_Stars](https://img.shields.io/github/stars/frappe/erpnext-shipping?style=social&color=white)](https://github.com/frappe/erpnext-shipping/stargazers) 🏭
 * **Stack:** Python, Frappe Framework, ERPNext 🐍
 * **License:** GPL-3.0 📄
 * **Description:** The official multi-carrier shipping integration app for ERPNext. Enables enterprise rate shopping across multiple aggregators and carriers (including Sendcloud and LetMeShip), one-click shipment creation from sales orders, automated label printing directly on packing slips, and synchronized live parcel tracking. 📦
 
-### 4. [DotNetShipping](https://github.com/kylewest/DotNetShipping) [![GitHub stars](https://img.shields.io/github/stars/kylewest/DotNetShipping?style=social&color=white)](https://github.com/kylewest/DotNetShipping/stargazers) 🔷
+### 4. [DotNetShipping](https://github.com/kylewest/DotNetShipping) [![GitHub_Stars](https://img.shields.io/github/stars/kylewest/DotNetShipping?style=social&color=white)](https://github.com/kylewest/DotNetShipping/stargazers) 🔷
 * **Stack:** C#, .NET 💻
 * **License:** MIT 📄
 * **Description:** A popular .NET multi-carrier rate calculation library. DotNetShipping wraps carrier web services for UPS, FedEx, and USPS into an intuitive, unified object model, enabling .NET e-commerce applications to fetch real-time carrier rates concurrently with automatic metric/imperial unit conversion. ⚡
 
-### 5. [ShippingRates](https://github.com/AlexeyBusygin/ShippingRates) [![GitHub stars](https://img.shields.io/github/stars/AlexeyBusygin/ShippingRates?style=social&color=white)](https://github.com/AlexeyBusygin/ShippingRates/stargazers) 🚀
+### 5. [ShippingRates](https://github.com/AlexeyBusygin/ShippingRates) [![GitHub_Stars](https://img.shields.io/github/stars/AlexeyBusygin/ShippingRates?style=social&color=white)](https://github.com/AlexeyBusygin/ShippingRates/stargazers) 🚀
 * **Stack:** C#, .NET Standard 💻
 * **License:** MIT 📄
 * **Description:** A modern, cross-platform .NET library that retrieves shipping rates from multiple carriers (UPS, FedEx, USPS, and DHL). Uses an extensible `RateManager` architecture that queries providers in parallel and returns structured quotes with error handling and service breakdown. ⏱️
 
-### 6. [python-ship](https://github.com/benweatherman/python-ship) [![GitHub stars](https://img.shields.io/github/stars/benweatherman/python-ship?style=social&color=white)](https://github.com/benweatherman/python-ship/stargazers) 🐍
+### 6. [python-ship](https://github.com/benweatherman/python-ship) [![GitHub_Stars](https://img.shields.io/github/stars/benweatherman/python-ship?style=social&color=white)](https://github.com/benweatherman/python-ship/stargazers) 🐍
 * **Stack:** Python 🐍
 * **License:** MIT 📄
 * **Description:** A Pythonic multi-carrier interface unifying access to common parcel carrier APIs (UPS, USPS, and FedEx). Designed for clean rate shopping, address validation, and shipment tracking without boilerplate SOAP/XML handling. ✨
 
-### 7. [cardmagic/shipping](https://github.com/cardmagic/shipping) [![GitHub stars](https://img.shields.io/github/stars/cardmagic/shipping?style=social&color=white)](https://github.com/cardmagic/shipping/stargazers) 🚚
+### 7. [cardmagic/shipping](https://github.com/cardmagic/shipping) [![GitHub_Stars](https://img.shields.io/github/stars/cardmagic/shipping?style=social&color=white)](https://github.com/cardmagic/shipping/stargazers) 🚚
 * **Stack:** Ruby 💎
 * **License:** MIT 📄
 * **Description:** An easy-to-use Ruby shipping gem for calculating shipping rates, tracking orders, and handling multi-package delivery configurations across major national and international logistics carriers. 📬
 
-### 8. [dzship](https://github.com/DZBuild-com/dzship) [![GitHub stars](https://img.shields.io/github/stars/DZBuild-com/dzship?style=social&color=white)](https://github.com/DZBuild-com/dzship/stargazers) 📍
+### 8. [dzship](https://github.com/DZBuild-com/dzship) [![GitHub_Stars](https://img.shields.io/github/stars/DZBuild-com/dzship?style=social&color=white)](https://github.com/DZBuild-com/dzship/stargazers) 📍
 * **Stack:** TypeScript, Node.js 🟩
 * **License:** MIT 📄
 * **Description:** An open-source multi-carrier shipping API connecting 90+ regional parcel couriers (Yalidine, ZR Express, Maystro, NOEST, Ecotrack network). Features unified COD (cash on delivery) order creation, label rendering, commune dataset mapping, and tracking status normalization. 🌍
 
-### 9. [Roulier](https://github.com/akretion/roulier) [![GitHub stars](https://img.shields.io/github/stars/akretion/roulier?style=social&color=white)](https://github.com/akretion/roulier/stargazers) 🇫🇷
+### 9. [Roulier](https://github.com/akretion/roulier) [![GitHub_Stars](https://img.shields.io/github/stars/akretion/roulier?style=social&color=white)](https://github.com/akretion/roulier/stargazers) 🇫🇷
 * **Stack:** Python 🐍
 * **License:** AGPL-3.0 📄
 * **Description:** A specialized Python library designed to communicate directly with French and European carrier APIs (La Poste, Colissimo, DPD, Chronopost, GLS) using merchant API credentials to generate parcel labels, track statuses, and request pickups. 🏷️
 
-### 10. [pdt256/shipping](https://github.com/pdt256/shipping) [![GitHub stars](https://img.shields.io/github/stars/pdt256/shipping?style=social&color=white)](https://github.com/pdt256/shipping/stargazers) 🐘
+### 10. [pdt256/shipping](https://github.com/pdt256/shipping) [![GitHub_Stars](https://img.shields.io/github/stars/pdt256/shipping?style=social&color=white)](https://github.com/pdt256/shipping/stargazers) 🐘
 * **Stack:** PHP 🐘
 * **License:** MIT 📄
 * **Description:** A modular PHP shipping rate aggregator for USPS, UPS, and FedEx. Standardizes rate requests, parcel dimensions, and origin/destination coordinates into a clean object-oriented PHP architecture. 🔧
 
-### 11. [ParcelBridge](https://github.com/salines/parcelbridge) [![GitHub stars](https://img.shields.io/github/stars/salines/parcelbridge?style=social&color=white)](https://github.com/salines/parcelbridge/stargazers) 🏢
+### 11. [ParcelBridge](https://github.com/salines/parcelbridge) [![GitHub_Stars](https://img.shields.io/github/stars/salines/parcelbridge?style=social&color=white)](https://github.com/salines/parcelbridge/stargazers) 🏢
 * **Stack:** PHP, CakePHP 5, MariaDB 🐘
 * **License:** MIT 📄
 * **Description:** An open-source backend starter application and warehouse workflow system designed for package forwarding services, intake scanning, customs invoice review, ship request management, and outbound dispatch operations. 📋
@@ -172,7 +172,7 @@ Contributions are welcomed! If you know of an active open-source multi-carrier s
 
 1. 🍴 Fork this repository.
 2. 📝 Add your project under the appropriate category in alphabetical or star-ranked order.
-3. 🔗 Include the repository URL, tech stack, license, and star count badge.
+3. 🔗 Include the repository URL, tech stack, license, and Stars_Count badge.
 4. 🚀 Submit a pull request with a descriptive title and release verification.
 
 ---
